@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080800;
+    color: #fff;
+}
+
+#portfolio{
+    padding: 50px 0;
+}
+
+#portfolio h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+.para{
+    margin: 80px 130px;
+    font-size: 20px;
+}
+
+.portfolio-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    grid-gap: 60px;
+    margin: 40px auto;
+    margin-top: 50px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.work{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.layer a {
+    margin-top: 25px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-size: 22px;
+    background: #262626;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer a i{
+    color: #fff;
+}
+
+.work.layer.fa-solid{
+    color: #fff;
+}
+
+.work :hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    #portfolio h1{
+        font-size: 36px;
+        margin: 0 20px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .para{
+        margin: 20px auto;
+        text-align: center;
+        max-width: 350px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .portfolio-list{
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        max-width: 350px;
+        grid-gap: 30px;
+    }
+
+    .work img{
+        max-width: 100%;
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .layer{
+        padding: 0 20px;
+    }
+
+    .layer h3{
+        font-size: 22px;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+
+    .layer p{
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .layer a {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 55px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .work.fa-solid{
+        color: #fff;
+    }
+}

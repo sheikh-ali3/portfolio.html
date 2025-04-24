@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ali: Web Developer, Software Engineer</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://kit.fontawesome.com/98e2a5941a.js" crossorigin="anonymous"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="back.js"></script>
+</head>
+<body>
+<!-- Main page -->
+    <section id="header">
+        <div class="side-bar">
+            <nav>
+                <img src="images/Muhammad Ali (2).png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-arrow-left-long" style="color: #ffffff;" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>  
+        </div>
+        <div class="main">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Muhammad Ali</span> </h1>
+        </div>
+    </section>
+
+<!-- Intro page -->
+    <section id="about">
+        <div class="description">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pin.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p class="para">I am a dynamic and dedicated software engineer hailing from the vibrant city of Lahore, Pakistan. My journey in the realm of technology is fueled by a passion for innovation and problem-solving. Armed with a relentless curiosity and a love for coding, I thrive on turning complex challenges into elegant solutions. With a strong foundation in software development, I embark on each project with enthusiasm, blending creativity and precision to craft seamless, user-centric experiences. As a proud contributor to the ever-evolving tech landscape, I am committed to pushing boundaries and leaving an indelible mark through my code. Join me on this exciting adventure where lines of code transform into pathways of possibility!</p>
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="toggleTabs(0)">Skills</p>
+                            <p class="tab-links active-link" onclick="toggleTabs(1)">Experience</p>
+                            <p class="tab-links active-link" onclick="toggleTabs(2)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="tab-skill">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing web/ App interfaces</li>
+                                <li><span>Web development</span><br>Building  websites using HTML, CSS and Javascript, Python</li>
+                                <li><span>App development</span><br>Building android/ios apps using Python, C++ and Java</li>
+                                <li><span>Communication</span><br>Good at communicationa and dealing with clients and co-workers</li>
+                            </ul>
+                    </div>
+                    <div class="tab-contents" id="tab-experience">
+                        <ul>
+                            <li><span>Dispatch Agent</span><br>Worked as a disptach agent in a call center of trucking campaign from <p style="color: antiquewhite;">September,2023 - Ongoing</p></li>
+                            <li><span>Sales Agent</span><br>Worked as a sales agent in a call center of trucking campaign from <p style="color: antiquewhite;">May,2023 - August,2023</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tab-education">
+                        <ul>
+                            <li><span>2026</span><br>Bachelors in Software Engineering from <span style="color: antiquewhite;">Superior University Gold Campus, Lahore</span></li>
+                            <li><span>2022</span><br>Intermediate from <span style="color: antiquewhite;">Kips College, Thokar Campus</span></li>
+                            <li><span>2020</span><br>Matriculation from <span style="color:antiquewhite;">Dar-e-Arqam School, Westwood Campus</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services page -->
+    <section id="services">
+        <h1 class="my-services">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>I can make professional as well as personal websites from scratch using HTML, CSS and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App development</h2>
+                <p>I can make responsive mobile appliactions for android and IOS systems using React Native framework.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX</h2>
+                <p>I can design the user interfaces of websites and mobile applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+<!-- portfolio -->
+    <section id="portfolio">
+        <h1>My Works</h1>
+        <div class="portfolio-list">
+           <div class="work">
+            <img src="images/work-1.jpg" alt="Quiz Platform">
+            <div class="layer">
+                <h3>Quiz Platform</h3>
+                <p>This helps you to test your knowledge about different subjects build purely with cpp</p>
+                <a href="https://github.com/sheikh-ali3/Online-Quiz-Platform.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+            <img src="images/work-2.jpg" alt="Bank Management System">
+            <div class="layer">
+                <h3>Bank Management System</h3>
+                <p>A premium banking software which gives full control of account to user and manager has can keep on eye of all activities as well build purely in cpp</p>
+                <a href="https://github.com/sheikh-ali3/Bank-Management-System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+            <img src="images/work-3.png" alt="Tic-Tac-Toe">
+            <div class="layer">
+                <h3>Tick-Tack-Toe</h3>
+                <p>A simple and interactive Tic-Tac-Toe (also known as Noughts and Crosses) game built using HTML, CSS, and JavaScript. This project demonstrates basic front-end development concepts, including DOM manipulation, event handling, and game logic.</p>
+                <a href="https://github.com/Ammarkashifbhatti/tik-toe-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+           </div>
+        </div>
+        <a href="work.html" class="btn"><button>See more</button></a>
+    </section>
+
+<!-- CV -->
+    <section id="cv">
+        <h1>Resume</h1>
+        <p>Download the curriculum vitae or resume here</p>
+        <a href="images/cv.pdf" download class="btn"><i class="fa-solid fa-download"></i></a>
+    </section>
+
+<!-- contact me -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> sheikhali12332@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> 0325-5005950</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sheikh_ali_12332"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sheikh-ali3"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/Muhammad.Ali.2551"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- copyright -->
+    <section class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Muhammad Ali. Made with <i class="fa-solid fa-heart"></i>  love</p>
+    </section>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby1j3XWfQcq5SQs1_M77Hpu-56S3rMxz4ear5Yz4U-K00V0EWcYz0A0SOvQANEMhgAt/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $("form[name='submit-to-google-sheet']").on('submit', function(e){
+              e.preventDefault(); 
+              $(this).trigger('reset'); 
+              $("#msg").text("Message submitted successfully!"); 
+  
+              setTimeout(function() {
+                  $("#msg").text(""); 
+              }, 3000); // clear the message after 3 seconds
+          });
+      });
+  </script>
+</body>
+</html>
