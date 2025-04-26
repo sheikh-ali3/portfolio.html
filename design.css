@@ -253,10 +253,15 @@ nav ul li a:hover::after{
 
 .portfolio-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
     grid-gap: 60px;
+    margin: 40px auto;
     margin-top: 50px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .work{
@@ -266,11 +271,17 @@ nav ul li a:hover::after{
 }
 
 .work img{
-    height: 600px;
     width: 100%;
+    max-width: 400px;
+    height: 500px;
     border-radius: 15px;
     display: block;
     transition: transform 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .layer{
@@ -314,6 +325,14 @@ nav ul li a:hover::after{
 
 .work :hover img{
     transform: scale(1.1);
+}
+
+.layer a i{
+    color: #fff;
+}
+
+.work.layer.fa-solid{
+    color: #fff;
 }
 
 .work:hover .layer{
@@ -596,13 +615,14 @@ nav .fa-solid{
         font-size: 36px;
         margin: 0 20px;
         text-align: center;
+        line-height: 1.2;
     }
 
     .portfolio-list{
-        grid-gap: 30px;
-        padding: 15px;
+        grid-template-columns: 1fr;
         margin: 20px auto;
         max-width: 350px;
+        grid-gap: 30px;
     }
 
     .work img{
@@ -618,12 +638,17 @@ nav .fa-solid{
     .layer h3{
         font-size: 22px;
         margin-bottom: 12px;
+        line-height: 1.3;
     }
 
     .layer p{
         font-size: 15px;
         line-height: 1.5;
         padding: 0 10px;
+    }
+
+    .work.fa-solid{
+        color: #fff;
     }
 
     .layer a{
